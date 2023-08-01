@@ -1,0 +1,25 @@
+Social Film es una aplicacion tipo red social.
+Los usurios podran crear post en donde compartan las pelicuas que le gustan. 
+
+Primero creamos dos carpetas: server y client. Para el back y fornt end respectivamente. Para el back usaremos 
+node con express y mongodb y para el client usaremos vite con react y tailwind. 
+
+
+la carpeta SERVER estara dividad en subcarpetas:
+
+models: los modelos para la base de datos. En este caso los modelos de post y user.
+
+routes: para crear las rutas de  nuestros endpoints, en este caso post.routes.js y auth.routes.js
+
+controllers: aquí va la lógica de que hacen y como se comportan nuestros 'componentes' en la aplicación,
+en este caso aut.controller.js para la logica de los usuarios y las autenticaciones y post.controller.js para
+la logica de como funcionaran los post, y el crud de estos mismos.
+
+schemas: en esta carpeta iran los esquemas de validacion de nuestrso modelos, qeu daton pasaran a traves de ellos. 
+aqui usaremos una libreria llamada zod. 
+
+middlewares: aqui iran funciones que acturan como intermedarias entre los datos que nos enviaran el fonr y nuestro back
+
+libs: aqui pondremos funciones que serán reutilizables en distintas partes de nuestro back,
+como las funciones referentes a los jsonwebtokens. 
+
